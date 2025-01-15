@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from pages.csv_analysis import csv_analysis_page
 from pages.listing_financial_report import listing_financial_page
 from pages.finance_standard_report import finance_standard_report_page
+from pages.rental_revenue_validation import rental_revenue_validation_page
 
 # Custom CSS for styling
 def add_custom_css():
@@ -74,7 +75,12 @@ def main():
     st.sidebar.markdown('<div class="menu-header">Navigation</div>', unsafe_allow_html=True)
     page = st.sidebar.radio(
         "📂 Select a Page:",
-        options=["CSV Analysis", "Listing Financial Report", "Finance Standard Report"],
+        options=[
+            "CSV Analysis",
+            "Listing Financial Report",
+            "Finance Standard Report",
+            "Rental Revenue Validation",  # New page added here
+        ],
     )
 
     # Render the selected page
@@ -84,6 +90,8 @@ def main():
         listing_financial_page()
     elif page == "Finance Standard Report":
         finance_standard_report_page()
+    elif page == "Rental Revenue Validation":  # New page case
+        rental_revenue_validation_page()
 
     # Footer in the sidebar
     st.sidebar.markdown("---")
