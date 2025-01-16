@@ -21,7 +21,7 @@ def add_custom_css():
         .menu-header {
             font-size: 18px;
             font-weight: bold;
-            color: #333333;
+            color: #f3f6f4;
             margin-top: 20px;
             margin-bottom: 10px;
         }
