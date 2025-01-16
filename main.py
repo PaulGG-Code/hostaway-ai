@@ -30,14 +30,14 @@ def add_custom_css():
         .css-1cpxqw2 textarea {
             font-family: 'Courier New', monospace;
             font-size: 14px;
-            color: #333333;
+            color: ##f3f6f4;
         }
         
         /* Sidebar radio styling */
         .css-qrbaxs {
             font-size: 16px;
             font-weight: 500;
-            color: #333333;
+            color: ##f3f6f4;
         }
         </style>
         """,
